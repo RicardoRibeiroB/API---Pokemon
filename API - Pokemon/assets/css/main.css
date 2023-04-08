@@ -1,0 +1,134 @@
+/* *{
+    outline: 1px dashed salmon;
+}  */
+
+body {
+    margin: 0%;
+    padding: 0%;
+    border-spacing: 0%;
+    
+}
+
+
+header{
+    background-color:  #e2e2e5;
+    position: relative; /* adiciona nova posição para seus filhos */
+}
+
+.container-header{
+    margin-left: 30%;
+}
+
+#search-button{
+    border-radius: 15px;
+    padding: 0.3em 3.3em;
+    background-color: #18aeb1;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin: 10px;
+}
+
+#search-input{
+    border-radius: 15px;
+    padding-top: 0.3em;
+    padding-right: 7em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+}
+
+.infos{
+    background-color:   #021f2e;
+    border-radius: 15px;
+    margin-left: 60%;
+    margin-top: 20px;
+    width: 67%;
+}
+.estilo-carNome{
+font-size: 2em;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 170px;
+}
+
+  .estilo-car{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+#habilidadePokemon{
+    font-size: 0.5em;
+    text-align: center;
+}
+#formasPokemon{
+    font-size: 0.5em;
+    text-align: center;
+}
+#especiesPokemon{
+    font-size: 0.5em;
+    text-align: center;
+}
+#tiposPokemon{
+    font-size: 0.5em;
+    text-align: center;
+}
+#xpPokemon{
+    font-size: 0.5em;
+    text-align: center;
+}
+#alturaPokemon{
+    font-size: 0.5em;
+    text-align: center;
+}
+
+/* aqui estva a responsividade para telas menores que 995px */
+@media only screen and (max-width: 995px) {
+    .container-header {
+    margin-left: 10%; 
+    }
+    .infos {
+    margin-left: 10%; 
+    width: 400px; 
+    margin-top: 10px;  
+    }
+    }
+
+/* aqui estva a responsividade para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+     
+    #search-input {
+        width: 80%; 
+        margin-left: 40px;
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+    #search-button {
+        width: 40%; 
+        margin-left: 25%; 
+    }
+    .container-header {
+        margin-left: 0;
+        width: 100%; 
+    }
+    .infos {
+        margin-right: 20px;
+        overflow: hidden; 
+    }
+    /* aqui estva a responsividade para telas menores que 500px */
+    @media only screen and (max-width: 500px) {
+        .infos {
+            width: auto; 
+        }
+        .estilo-carNome {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+    }
+}
+
+
